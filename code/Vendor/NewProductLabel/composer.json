@@ -1,0 +1,14 @@
+{
+  "name": "vendor/newproductlabel",
+  "description": "agrega una etiqueta '¡Nuevo!' para productos recien agregados hace 7 dias",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "autoload": {
+    "psr-4": {
+      "Vendor\\NewProductLabel\\": ""
+    },
+    "files": [
+      "registration.php"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Vendor_NewProductLabel::css/source/_extend.less" />
+    </head>
+    <body>
+        <referenceContainer name="product.info.main">
+            <block class="Vendor\NewProductLabel\Block\NewLabel"
+                   name="product.new.label"
+                   template="Vendor_NewProductLabel::label.phtml"
+                   before="product.info.price"/>
+        </referenceContainer>
+    </body>
+</page>
