@@ -1,0 +1,21 @@
+.cart-container {
+    button.action.update,
+    button.action.primary.checkout {
+        background-color: #FFA500;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    button.action.update:hover,
+    button.action.primary.checkout:hover {
+        background-color: #e69500;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        transform: translateY(-1px);
+    }
+}

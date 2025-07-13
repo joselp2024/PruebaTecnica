@@ -1,0 +1,23 @@
+.cart-featured-message {
+    background-color: #fff3e0;
+    border: 1px solid #ffa500;
+    border-left: 8px solid #ffa500;
+    padding: 16px 20px;
+    margin-top: 25px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+    font-weight: 500;
+    color: #d35400;
+}
+
+@media screen and (max-width: 768px) {
+    .cart-featured-message {
+        font-size: 14px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
