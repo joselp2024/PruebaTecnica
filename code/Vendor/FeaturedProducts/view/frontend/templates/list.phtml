@@ -1,0 +1,26 @@
+<?php
+$image1 = $block->getViewFileUrl('Vendor_FeaturedProducts::images/mj11-black_main_1.jpg');
+$image2 = $block->getViewFileUrl('Vendor_FeaturedProducts::images/mj10-red_main_2.jpg');
+$image3 = $block->getViewFileUrl('Vendor_FeaturedProducts::images/mj09-yellow_main_3.jpg');
+$image4 = $block->getViewFileUrl('Vendor_FeaturedProducts::images/mj08-gray_main_4.jpg');
+$image5 = $block->getViewFileUrl('Vendor_FeaturedProducts::images/mj02-green_main_5.jpg');
+
+$products = [
+    ['name' => 'Producto 1', 'price' => 'Q10.00', 'image' => $image1],
+    ['name' => 'Producto 2', 'price' => 'Q20.00', 'image' => $image2],
+    ['name' => 'Producto 3', 'price' => 'Q30.00', 'image' => $image3],
+    ['name' => 'Producto 4', 'price' => 'Q40.00', 'image' => $image4],
+    ['name' => 'Producto 5', 'price' => 'Q50.00', 'image' => $image5],
+];
+?>
+
+<div class="featured-products-grid">
+    <?php foreach ($products as $product): ?>
+        <div class="product-item">
+            <img src="<?= $product['image'] ?>" alt="<?= $product['name'] ?>" />
+            <h3><?= $product['name'] ?></h3>
+            <p><strong><?= $product['price'] ?></strong></p>
+        </div>
+    <?php endforeach; ?>
+</div>
+
